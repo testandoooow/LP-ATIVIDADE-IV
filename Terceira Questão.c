@@ -30,13 +30,13 @@ int main(){
 	menu();
 	
 	for(i = 0; i < 3; i++){
-		printf("%dª quantidade no estoque: ",i + 1);
+		printf("%dÂª quantidade no estoque: ",i + 1);
 		scanf("%d",&produto[i].quantidade);
 	}
 	
 	do{
 		
-	printf("Digite o número correspondente a uma das opções acima: ");
+	printf("Digite o nÃºmero correspondente a uma das opÃ§Ãµes acima: ");
 	scanf("%d",&opcao);
 	
 	if(opcao == 1){
@@ -57,7 +57,7 @@ int main(){
 		fflush(stdin);
 		printf("Escreva o nome do produto: ");
 		gets(produto[i].nome);
-		printf("Digite o preço do produto: ");
+		printf("Digite o preÃ§o do produto: ");
 		scanf("%f",&produto[i].preco);
 		
 	
