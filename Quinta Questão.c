@@ -32,7 +32,7 @@ int main(){
 	gets(funcionario[i].nome);
 	printf("Escreva seu cargo: ");
 	gets(funcionario[i].cargo);
-	printf("Digite seu sal·rio: ");
+	printf("Digite seu sal√°rio: ");
 	scanf("%f",&funcionario[i].salario);
 	
 	fflush(stdin);
