@@ -22,7 +22,7 @@ char numero(struct contato_ *contato, char *contatos){
 	return;
 }
 }
-printf("Contato n„o encontrado. \n");
+printf("Contato n√£o encontrado. \n");
 }
 
 void pessoa(){
@@ -44,7 +44,7 @@ int main(){
 	for(i = 0; i < 3; i++){
 		printf("Escreva o nome: ");
 		gets(contato[i].nome);
-		printf("Digite o n˙mero de telefone: ");
+		printf("Digite o n√∫mero de telefone: ");
 		gets(contato[i].numeroDeTelefone);
 		printf("Escreva seu email: ");
 		gets(contato[i].email);
