@@ -38,7 +38,7 @@ int main(){
 		gets(Aluno[i].dataDeNascimento);
 		
 		for(j = 0; j < 2; j++){
-			printf("Digite a %dª nota: ",j + 1);
+			printf("Digite a %dÂª nota: ",j + 1);
 			scanf("%f",&Aluno[i].notas[j]);
 		}
 		fflush(stdin);
@@ -51,7 +51,7 @@ int main(){
 		printf("Nome: %s\n",Aluno[i].nome);
 		
 		for(j = 0; j < 2; j++){
-			printf("%dª Nota: %.1f\n",j + 1, Aluno[i].notas[j]);
+			printf("%dÂª Nota: %.1f\n",j + 1, Aluno[i].notas[j]);
 		}
 		printf("\n Media: %.1f\n",media);
 	}
