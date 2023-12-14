@@ -13,7 +13,7 @@ struct contaBancaria Conta;
 
 struct contaBancaria depositar(struct contaBancaria conta, float valor){
     conta.saldo += valor;
-    printf("Depósito de R$%.2f realizado\n",valor);
+    printf("DepÃ³sito de R$%.2f realizado\n",valor);
     return conta;
 }
 
@@ -31,12 +31,12 @@ void saldo(struct contaBancaria conta){
     printf("Saldo atual: R$%.2f\n",conta.saldo);
 }
 
-void exibirMenu(){
+void menu(){
     printf("\n1 - Depositar\n");
     printf("2 - Sacar\n");
     printf("3 - Imprimir Saldo\n");
     printf("4 - Sair\n");
-    printf("Escolha uma opção (1 a 4): ");
+    printf("Escolha uma opÃ§Ã£o (1 a 4): ");
 }
 
 int main(){
@@ -46,11 +46,11 @@ int main(){
     float valor;
 
     do{
-    exibirMenu();
+    menu();
     scanf("%d", &opcao);
 	switch (opcao){
         case 1:
-        printf("Digite o valor para depósito: ");
+        printf("Digite o valor para depÃ³sito: ");
         scanf("%f", &valor);
         Conta = depositar(Conta, valor);
         break;
@@ -66,7 +66,7 @@ int main(){
             break;
 
             default:
-            printf("Opção inválida.\n");
+            printf("OpÃ§Ã£o invÃ¡lida.\n");
         }
 
     } while (opcao >= 1 && opcao <= 3);
